@@ -19,6 +19,6 @@
     # namespace: with your own namespace,
     # MP3 with your audio file's DSID
 
-curl --user fedoraAdmin:F3d0raT3st http://fedora.hpc.hamilton.edu:8080/fedora/objects/apw:159/datastreams/MODS/content > 159.xml
+curl --user fedoraAdmin:PWD http://fedora.hpc.hamilton.edu:8080/fedora/objects/apw:159/datastreams/MODS/content > 159.xml
 echo "$PID Downloaded"
 #done
