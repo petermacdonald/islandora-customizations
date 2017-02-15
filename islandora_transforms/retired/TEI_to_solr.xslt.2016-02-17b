@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- TEI -->
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:foxml="info:fedora/fedora-system:def/foxml#" xmlns:tei="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="tei foxml">
+
+    <xsl:template match="foxml:datastream[@ID = 'TEI']/foxml:datastreamVersion[last()]" name="index_TEI">
+        <xsl:param name="content"/>
+        <xsl:param name="prefix">TEI_</xsl:param>
+        <xsl:param name="suffix">_ms</xsl:param>
+        <xsl:param name="suffix2">_s</xsl:param>
+
+        <!-- persName and persName_roleName-->
+        <xsl:for-each select="$content//tei:persName/tei:reg[text()]">
+            <xsl:choose>
+                <xsl:when test="tei:roleName != ''">
+                    <field>
+                        <xsl:attribute name="name">
+                            <xsl:value-of select="concat($prefix, 'persName_roleName', $suffix)"/>
+                        </xsl:attribute>
+                        <xsl:value-of select="tei:roleName"/>
+                    </field>
+                    <field>
+                        <xsl:attribute name="name">
+                            <xsl:value-of select="concat($prefix, 'persName', $suffix)"/>
+                        </xsl:attribute>
+                        <xsl:value-of select="normalize-space(concat(text(), tei:roleName))"/>
+                    </field>
+                    <!--
+                        <field>
+                        <xsl:attribute name="name">
+                            <xsl:value-of select="concat($prefix, 'persName', $suffix2)"/>
+                        </xsl:attribute>
+                        <xsl:value-of select="normalize-space(concat(text(), tei:roleName))"/>
+                    </field>
+                     -->
+                </xsl:when>
+                <xsl:otherwise>
+                    <field>
+                        <xsl:attribute name="name">
+                            <xsl:value-of select="concat($prefix, 'persName', $suffix)"/>
+                        </xsl:attribute>
+                        <xsl:value-of select="normalize-space(text())"/>
+                    </field>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:for-each>
+
+        <!-- persName -->
+        <xsl:for-each select="$content//tei:placeName/tei:reg[text()]">
+            <field>
+                <xsl:choose>
+                    <xsl:when test="tei:region != ''">
+                        <xsl:attribute name="name">
+                            <xsl:value-of select="concat($prefix, 'placeName', $suffix)"/>
+                        </xsl:attribute>
+                        <xsl:value-of select="normalize-space(concat(text(), tei:region))"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:attribute name="name">
+                            <xsl:value-of select="concat($prefix, 'placeName', $suffix)"/>
+                        </xsl:attribute>
+                        <xsl:value-of select="normalize-space(text())"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </field>
+        </xsl:for-each>
+
+        <!-- placeName -->
+        <!--
+        <xsl:for-each select="$content//tei:placeName/tei:reg[text()]">
+            <field>
+                <xsl:attribute name="name">
+                    <xsl:value-of select="concat($prefix, 'placeName', $suffix)"/>
+                </xsl:attribute>
+                <xsl:value-of select="normalize-space(text())"/>
+            </field>
+        </xsl:for-each>
+   -->
+
+        <!-- orgName -->
+        <xsl:for-each select="$content//tei:orgName/tei:reg[text()]">
+            <field>
+                <xsl:attribute name="name">
+                    <xsl:value-of select="concat($prefix, 'orgName', $suffix)"/>
+                </xsl:attribute>
+                <xsl:value-of select="normalize-space(text())"/>
+            </field>
+        </xsl:for-each>
+        <!-- roleName -->
+        <xsl:for-each select="$content//tei:roleName[text()]">
+            <field>
+                <xsl:attribute name="name">
+                    <xsl:value-of select="concat($prefix, 'roleName', $suffix)"/>
+                </xsl:attribute>
+                <xsl:value-of select="normalize-space(text())"/>
+            </field>
+        </xsl:for-each>
+
+        <!-- forename -->
+        <xsl:for-each select="$content//tei:forename[text()]">
+            <field>
+                <xsl:attribute name="name">
+                    <xsl:value-of select="concat($prefix, 'forename', $suffix)"/>
+                </xsl:attribute>
+                <xsl:value-of select="normalize-space(text())"/>
+            </field>
+        </xsl:for-each>
+
+        <!-- surname -->
+        <xsl:for-each select="$content//tei:surname[text()]">
+            <field>
+                <xsl:attribute name="name">
+                    <xsl:value-of select="concat($prefix, 'surname', $suffix)"/>
+                </xsl:attribute>
+                <xsl:value-of select="normalize-space(text())"/>
+            </field>
+        </xsl:for-each>
+
+        <!-- settlement name -->
+        <xsl:for-each select="$content//tei:settlement[text()]">
+            <field>
+                <xsl:attribute name="name">
+                    <xsl:value-of select="concat($prefix, 'settlement', $suffix)"/>
+                </xsl:attribute>
+                <xsl:value-of select="normalize-space(text())"/>
+            </field>
+        </xsl:for-each>
+
+        <!-- region name -->
+        <xsl:for-each select="$content//tei:region[text()]">
+            <field>
+                <xsl:attribute name="name">
+                    <xsl:value-of select="concat($prefix, 'region', $suffix)"/>
+                </xsl:attribute>
+                <xsl:value-of select="normalize-space(text())"/>
+            </field>
+        </xsl:for-each>
+
+        <!-- geoName -->
+        <xsl:for-each select="$content//tei:geogName/tei:reg/*[text()]">
+            <field>
+                <xsl:attribute name="name">
+                    <xsl:value-of select="concat($prefix, 'geogName', $suffix)"/>
+                </xsl:attribute>
+                <xsl:value-of select="normalize-space(text())"/>
+            </field>
+        </xsl:for-each>
+
+        <!-- text -->
+        <xsl:for-each select="$content//tei:text[text()]">
+            <field>
+                <xsl:attribute name="name">
+                    <xsl:value-of select="concat($prefix, 'text', $suffix)"/>
+                </xsl:attribute>
+                <xsl:value-of select="normalize-space(.)"/>
+            </field>
+        </xsl:for-each>
+
+    </xsl:template>
+</xsl:stylesheet>
