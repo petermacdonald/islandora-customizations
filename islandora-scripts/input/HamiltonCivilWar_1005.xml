@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_ms.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="cw02642">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>xLetter written by Rush P. Cady, lieutenant in the 97th New York Volunteer Infantry Regiment, Company K, from Camp of the 97th Reg. N.Y.V. near Belle Plains, Virginia, March 3, 1863, to his mother, Mrs. Daniel Cady, of Rome, New York</title>
+<author>
+<persName>Cady, Rush Palmer</persName>
+</author>
+<respStmt>
+<resp>transcribed and converted to TEI-conformant markup by </resp>
+<name>
+<orgName>Backstage Library Works, Orem, Utah</orgName>
+</name>
+</respStmt>
+<respStmt>
+<resp>enhanced TEI markup</resp>
+<name><orgName>Hamilton College Library</orgName></name>
+</respStmt>
+</titleStmt>
+<publicationStmt>
+<distributor>
+<date when="2006">2006</date>
+<orgName>Hamilton College Library</orgName>
+</distributor>
+</publicationStmt>
+<seriesStmt>
+<title>cady</title>
+</seriesStmt>
+<sourceDesc>
+<bibl>
+<title>Letter written by Rush P. Cady, lieutenant in the 97th New York Volunteer Infantry Regiment, Company K, from Camp of the 97th Reg. N.Y.V. near Belle Plains, Virginia, March 3, 1863, to his mother, Mrs. Daniel Cady, of Rome, New York</title>
+<date when="1863-03-03">March 3, 1863</date>
+</bibl>
+<msDesc>
+<msIdentifier>
+<settlement>Clinton, New York, United States</settlement>
+<repository>Hamilton College Library</repository>
+<idno type="local">cw02642</idno>
+</msIdentifier>
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<correspDesc>
+<correspAction type="sent">
+<persName><surname>Cady</surname>, <forename>Rush</forename>
+<forename>Palmer</forename>
+</persName>
+<affiliation>97th New York Infantry Regiment</affiliation>
+<placeName><settlement>Belle Plain Landing</settlement> [near], <region type="state" n="VA">Virginia</region></placeName>
+<location>
+<geo>Belle Plains, Virginia</geo>
+</location>
+<date when="1863-03-03">March 3, 1863</date>
+</correspAction>
+<correspAction type="received">
+<persName><surname>Cady</surname>
+<forename>Fidelia</forename>
+<forename>W.</forename> (Fidelia W. Palmer)</persName>
+<persName><surname type="maiden">Palmer</surname>, <forename>Fidelia</forename>
+<forename>W.</forename> (Mrs. Daniel Cady)</persName>
+<placeName><settlement>Rome</settlement>, <region type="county">Oneida County</region>, <region type="state" n="NY">New York</region></placeName>
+</correspAction>
+</correspDesc>
+</profileDesc>
+</teiHeader>
+<text>
+<body>
+<div1 type="letter">
+<p><pb n="1" xml:id="p1"/><ref target="http://dlib.hamilton.edu/dl/dlget.php?img=spe-civ-cad-02642001.jpg">PAGE IMAGE</ref> 4<lb/> It is very positively stated, by some,<lb/> that we are going to <placeName><settlement>Washington</settlement><reg>Washington, District of Columbia</reg></placeName>. The<lb/><orgName>Division Commissary<reg>Division Commissary</reg></orgName> has been informed<lb/> that no more cattle are to be sent to this<lb/> Division. And I am also told that <persName><roleName full="abb">Gen.</roleName>
+<surname>Abercrombie</surname><reg>Abercrombie, John Joseph (General)</reg></persName>'s<lb/> Division has already<lb/> arrived at the Landing, &amp; that he said<lb/> to <persName><roleName full="abb">Gen</roleName>
+<surname>Taylor</surname><reg>Taylor, Nelson (General)</reg></persName>, that he had came to re-<lb/> lieve our Division. We hope this is<lb/> true, &amp; know no reason why it should<lb/> not be our Div. as well as any other. But<lb/> we have learned not to place confidence<lb/> in such reports, unless they come to us<lb/> with official authority. <space quantity="10"/>The storm<lb/> has come &amp; gone, very suddenly. For<lb/> a few minutes it blew furiously, &amp; our<lb/> tents rattled &amp; strained, as if about to<lb/> start on an aerial voyage. Soon the<lb/> rain, slightly intermingled with hail &amp;<lb/> snow, followed; but the storm has<lb/> entirely ceased, within half an hour<lb/> of its commencement, &amp; the sun again<lb/> shines out gloriously; the storm having<pb n="2" xml:id="p2"/><ref target="http://dlib.hamilton.edu/dl/dlget.php?img=spe-civ-cad-02642002.jpg">PAGE IMAGE</ref> Passed to the East &amp; <choice>
+<expan>South East</expan>
+<abbr>S.E.</abbr>
+</choice>> The sky, except<lb/> in that direction, is beautifully clear,<lb/> &amp; everything has a freshened aspect,<lb/> which always succeeds a brief shower.<lb/></p>
+<p><space quantity="15"/>Yesterday afternoon the<lb/> battalion was drilled in a very satis-<lb/> factory manner, by <persName>Maj. <surname>Northup</surname><reg>Northrup, Charles (Major)</reg></persName>, who<lb/> always &#8220;puts us through&#8221;, to some advantage.<lb/></p>
+<p><space quantity="10"/>The <orgName>105th<reg>105th Regiment, New York</reg></orgName> &amp; <orgName>94th N.Y. Regts<reg>94th Regiment, New York</reg></orgName> (the<lb/> latter from <placeName><settlement>Watertown</settlement><reg>Watertown, New York</reg></placeName>) of <orgName><persName><roleName full="abb">Col.</roleName>
+<surname>Root</surname><reg>Root (<roleName>Colonel</roleName>)</reg></persName>'s Brigade<reg>Root's Brigade</reg></orgName><lb/> (formerly <persName><surname>Duryea</surname><reg>Duryea</reg></persName>'s) have been consolida-<lb/> ted recently.- This was in accordance<lb/> with the wishes of the officers of those<lb/> Regt's; &amp; it is thought that future Con-<lb/> solidations will be made in like man-<lb/> ner: as far as possible according to the<lb/> choice of officers, that is &#8211; their prefer-<lb/> ence of certain Reg'ts.-<lb/></p>
+<p><space quantity="10"/><persName>Lieut. <surname>Sayres</surname><reg>Sayres (<roleName>Lieutenant</roleName>)</reg></persName>, Actj R.Q.M. gives an<lb/> Oyster Supper tomorrow Evening, which<lb/> is expected to be a grand entertain-<lb/> ment, for camp. I was favored with<lb/> a cordial invitation.- The officers of<lb/> our Reg. are getting to <choice>
+<sic>e</sic>
+<corr>be</corr>
+</choice> more &amp; more<lb/> social &amp; friendly in their intercourse<lb/> with each other.- Love to the Elder mem-<lb/> bers of the family, &amp; kisses to the children.<lb/> And also remember me kindly to the good friends<lb/> who sometimes think of &amp; inquire about me.</p>
+<closer>
+<salute><space quantity="30"/>Your affectionate Son</salute>
+<signed><space quantity="45"/><persName><forename>Rush</forename>
+<forename>P.</forename>
+<surname>Cady</surname><reg>Cady, Rush Palmer (<roleName>Lieutenant</roleName>)</reg></persName>. </signed>
+</closer>
+</div1>
+</body>
+</text>
+</TEI>
